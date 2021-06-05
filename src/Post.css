@@ -1,0 +1,60 @@
+.post {
+  max-width: 500px;
+  background-color: white;
+  border: 2px solid lightgray;
+  margin: 20px;
+}
+.post__image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.post__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 10px 10px 5px;
+}
+
+.post__text {
+  padding: 10px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.post__heart {
+  color: red;
+  position: absolute;
+  top: 300px;
+  left: 245px;
+}
+
+.post__comments {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.post__comment_button {
+  margin-left: 3px !important;
+  flex: 0;
+}
+
+.post__user_comments {
+  padding: 20px;
+}
+
+.post__comment_input {
+  flex: 1;
+}
+
+.post__comment_message {
+  padding: 7px;
+  margin: 5px;
+  background-color: lightgray;
+  border-radius: 13px;
+}
+
+.post__commentor {
+  text-transform: capitalize;
+}
