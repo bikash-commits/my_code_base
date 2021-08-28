@@ -4,8 +4,13 @@ import './index.scss';
 import App from './components/app';
 import * as serviceWorker from './serviceWorker';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+import { StateProvider } from './components/state_provider';
+import reducer, { initialState } from './components/reducer';
+ReactDOM.render(
+  <StateProvider initialState={initialState} reducer={reducer}>
+    <App />
+  </StateProvider>,
+ document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

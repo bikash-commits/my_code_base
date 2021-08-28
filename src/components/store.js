@@ -14,7 +14,4 @@ store.dispatch(createPolicy('bikash', 20));
 store.dispatch(createPolicy('Akash', 30));
 store.dispatch(deletePolicy('bikash'));
 
-console.log('hi', store.getState());
-
-
 export default store;
